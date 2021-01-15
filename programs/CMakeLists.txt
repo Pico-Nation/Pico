@@ -1,0 +1,5 @@
+add_subdirectory( nodpico )
+add_subdirectory( clpico )
+add_subdirectory( kpicod )
+add_subdirectory( picoio-launcher )
+add_subdirectory( picoio-blocklog )

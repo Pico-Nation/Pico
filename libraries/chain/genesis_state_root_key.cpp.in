@@ -1,0 +1,7 @@
+#include <picoio/chain/genesis_state.hpp>
+
+namespace picoio { namespace chain {
+
+const string genesis_state::picoio_root_key = "${PICOIO_ROOT_KEY}";
+
+} } // namespace picoio::chain
