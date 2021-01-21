@@ -13,6 +13,8 @@ endif()
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../../.git)
   find_package(Git)
   if(GIT_FOUND)
+	    # set(nodpico_BUILD_VERSION 0)
+		
     execute_process(
       COMMAND ${GIT_EXECUTABLE} rev-parse --short=8 HEAD
       WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../.."
@@ -48,7 +50,7 @@ else()
 endif()
 
 target_link_libraries( ${NODE_EXECUTABLE_NAME}
-        PRIVATE appbase version
+        PRIVATE appbase version #is this the issue? <-----------------------------------------------------------------
         PRIVATE -Wl,${whole_archive_flag} login_plugin               -Wl,${no_whole_archive_flag}
         PRIVATE -Wl,${whole_archive_flag} history_plugin             -Wl,${no_whole_archive_flag}
         PRIVATE -Wl,${whole_archive_flag} state_history_plugin       -Wl,${no_whole_archive_flag}

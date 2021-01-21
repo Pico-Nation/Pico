@@ -12,6 +12,8 @@ endif()
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../../.git)
   find_package(Git)
   if(GIT_FOUND)
+      # set(launcher_BUILD_VERSION 0)
+
     execute_process(
       COMMAND ${GIT_EXECUTABLE} rev-parse --short=8 HEAD
       WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../.."
