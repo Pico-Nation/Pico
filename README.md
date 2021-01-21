@@ -24,9 +24,13 @@ Some of the groundbreaking features of PICOIO include:
 
 Block.one is neither launching nor operating any initial public blockchains based upon the PICOIO software. This release refers only to version 1.0 of our open source software. We caution those who wish to use blockchains built on PICOIO to carefully vet the companies and organizations launching blockchains based on PICOIO before disclosing any private keys to their derivative software.
 
+## Gui Wallet
+
+Coming Soon!
+
 ## Official Testnet
 
-[testnet.pico.io](https://testnet.pico.io/)
+Coming Soon!
 
 ## Supported Operating Systems
 
